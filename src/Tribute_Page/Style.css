@@ -1,0 +1,71 @@
+
+h1{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+	padding-top: 20px;
+	font-size: 3em;
+}
+p {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+	font-size: 1.1rem;
+}
+/* The whole body*/
+#main {
+	text-align: center;
+	background-color: #eeeeee;
+	border-radius: 5px;
+	height: auto;
+}
+#img-div {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 500px;
+  /*height: 398px;*/
+  margin: auto;
+  background-color: white;
+}
+
+/* On mouse-over, add a deeper shadow */
+#img-div:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+#img-caption {
+  padding: 2px 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+  /*width: 400px;*/
+  /*height: 600px;*/
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#tribute-info {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding-top:40px;
+  padding-bottom:10px;
+  padding-left:50px;
+  border-style: hidden;
+}
+#bref-title {
+	display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+footer {
+	padding-top: 35px;
+  padding-bottom: 45px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
