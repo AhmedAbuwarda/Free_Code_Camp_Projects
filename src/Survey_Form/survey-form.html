@@ -15,44 +15,125 @@ Feel free to delete this message once you have read it. Good luck and Happy Codi
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tribute Page</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-<div id="main">
-    <h1 id="title">Bill Gates</h1>
-    <p>The man who invented the windows</p>
-    <div id="img-div">
-        <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Bill_Gates_July_2014.jpg"
-             alt="Bill Gates">
-        <div id="img-caption">
-            <h4><b>Bill Gates, third from the left, trains biologists in Mexico on how to increase wheat yields - part
-                of his life-long war on hunger</b></h4>
+<h1 id="title">Survey Form</h1>
+<div id="form-outer">
+    <p id="description">
+        Let us know how we can improve freeCodeCamp
+    </p>
+    <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+        <div class="rowTab">
+            <div class="labels">
+                <label id="name-label" for="name">* Name: </label>
+            </div>
+            <div class="rightTab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+            </div>
         </div>
-    </div>
-    <div id="tribute-info">
-        <strong id="bref-title">Here's a time line of Dr. Borlaug's life:
-        </strong>
-        <br>
-        <br>
-        <p><b>William Henry Gates</b> III (born October 28, 1955) is an American business magnate, investor, author,
-            philanthropist, and humanitarian. He is best known as the principal founder of Microsoft Corporation. During
-            his career at Microsoft, Gates held the positions of chairman, CEO and chief software architect, while also
-            being the largest individual shareholder until May 2014.</p>
-        <br>
-        <p>Born and raised in Seattle, Washington, Gates launched Microsoft with Paul Allen in 1975; it went on to
-            become the world's largest personal computer software company. Gates led the company as chairman and CEO
-            until stepping down as CEO in January 2000, but he remained chairman and became chief software architect.In
-            June 2006, Gates announced that he would be transitioning to a part-time role at Microsoft and full-time
-            work at the Bill & Melinda Gates Foundation, the private charitable foundation that he and his wife, Melinda
-            Gates, established in 2000. He gradually transferred his duties to Ray Ozzie and Craig Mundie. He stepped
-            down as chairman of Microsoft in February 2014 and assumed a new post as technology adviser to support the
-            newly appointed CEO Satya Nadella.</p>
-    </div>
-    <footer>
-        <b>If you have time, you should read more about this incredible human being on his</b>
-        <a id="tribute-link" href="https://en.wikipedia.org/wiki/Bill_Gates" target="_blank"><b>Wikipedia entry</b></a>
-    </footer>
+        <div class="rowTab">
+            <div class="labels">
+                <label id="email-label" for="email">* Email: </label>
+            </div>
+            <div class="rightTab">
+                <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label id="number-label" for="age">* Age: </label>
+            </div>
+            <div class="rightTab">
+                <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="currentPos">Which option best describes your current role?</label>
+            </div>
+            <div class="rightTab">
+                <select id="dropdown" name="currentPos" class="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+            </div>
+            <div class="rightTab">
+                <ul style="list-style: none;">
+                    <li class="radio"><label>Definitely<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>
+                    <li class="radio"><label>Maybe<input name="radio-buttons" value="2" type="radio" class="userRatings"></label></li>
+                    <li class="radio"><label>Not sure<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="most-like">What do you like most in FCC: </label>
+            </div>
+            <div class="rightTab">
+                <select id="most-like" name="mostLike" class="dropdown">
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="preferences">Things that should be improved in the future<br>(Check all that apply):
+                </label>
+            </div>
+            <div class="rightTab">
+                <ul id="preferences" style="list-style: none;">
+                    <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end
+                        Projects</label></li>
+                    <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end
+                        Projects
+                    </li>
+                    <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Data
+                        Visualization</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label>
+                    </li>
+                    <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open
+                        Source Community</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Gitter
+                        help rooms</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Videos</label>
+                    </li>
+                    <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">City
+                        Meetups</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Wiki</label>
+                    </li>
+                    <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label>
+                    </li>
+                    <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Additional
+                        Courses</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="comments">Any Comments or Suggestions?</label>
+            </div>
+            <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment"
+                          placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
 </div>
 </body>
 </html>
